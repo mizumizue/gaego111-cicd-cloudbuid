@@ -1,0 +1,15 @@
+steps:
+  - name: 'gcr.io/cloud-builders/go'
+    id: 'run-test'
+    env: ['PROJECT_ROOT=gaego111-cloud-build', 'GO111MODULE=on']
+    args: ['test', './...']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'remove-gopath'
+    entrypoint: 'bash'
+    args:
+      - -c
+      - |
+        rm -rf  gopath
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'gae-deploy'
+    args: ['app', 'deploy', '--no-promote']
