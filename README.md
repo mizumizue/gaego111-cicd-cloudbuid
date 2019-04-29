@@ -49,7 +49,7 @@ gcloud app deploy
 Local Debug
 
 ```
-cloud-build-local --dryrun=false --config=/path/to/cloudbuild.yaml
+cloud-build-local --dryrun=false --config=/path/to/cloudbuild.yaml .
 ```
 
 How to use bash command in image
