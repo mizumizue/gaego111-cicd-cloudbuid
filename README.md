@@ -1,6 +1,8 @@
 # README
 
-## Set up local gcloud command
+This is App Engine Go111 Sample that is Deploying and testing with Cloud Build.
+
+## Set up gcloud command in local
 
 ```
 gcloud auth login
