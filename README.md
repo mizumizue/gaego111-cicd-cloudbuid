@@ -1,4 +1,4 @@
-# CloudBuildSampleOnGAEGo111Runtime
+# gaego111-cicd-cloudbuid
 
 This is sample which is Deploying and testing by Cloud Build. 
 This targets Application executed in App Engine Standard Environment Go1.11 runtime.
